@@ -1,0 +1,102 @@
+.form {
+  color: #00008b;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+  padding: 2px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+}
+
+.search {
+  background-color: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  width: 100%;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search::placeholder {
+  color: #00008b;
+}
+
+.searchBtn {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 70px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z' fill='darkblue'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.searchBtn:hover {
+  opacity: 1;
+}
+
+.cryptos {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.crypto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 130px;
+  padding: 15px;
+  background: linear-gradient(to top right, #ff7f50, #ff9d79);
+  color: #00008b;
+}
+
+.crypto:nth-of-type(3n - 2) {
+  background: linear-gradient(to bottom left, #ff7f50, #ff9d79);
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow img {
+  width: 20px;
+  height: 20px;
+}
+
+.cryptoInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .cryptos {
+    display: grid;
+    grid-template-columns: repeat(4, 21.55%);
+    margin-left: 10%;
+    margin-top: 40px;
+    gap: 10px;
+  }
+
+  .crypto {
+    padding: 20px;
+  }
+
+  .arrow img {
+    width: 30px;
+    height: 30px;
+  }
+}

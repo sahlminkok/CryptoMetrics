@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  color: #00008b;
+  background-color: #ff7f50;
+  box-shadow: 0 4px 6px 0 rgba(255, 255, 255, 0.2);
+}
+
+.logo h1 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+.iconsList {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.iconsList li a {
+  text-decoration: none;
+}
+
+.mic,
+.sett {
+  width: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    justify-content: space-between; /* Add space between the logo and icons */
+    padding: 20px 10%; /* Increase the horizontal padding for better spacing */
+  }
+
+  .logo h1 {
+    font-size: 1.5rem; /* Increase the font size for better visibility */
+  }
+
+  .iconsList {
+    gap: 20px; /* Add some gap between the icons */
+  }
+}

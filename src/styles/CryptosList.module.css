@@ -59,7 +59,6 @@
   padding: 15px;
   background: linear-gradient(to top right, #ff7f50, #ff9d79);
   color: #00008b;
-  border: 1px solid darkblue;
 }
 
 .crypto:nth-of-type(3n - 2) {
@@ -94,10 +93,11 @@
 
   .crypto {
     padding: 20px;
+    border: 1px solid darkblue;
   }
 
   .arrow img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 }

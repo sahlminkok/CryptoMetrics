@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Details component correctly 1`] = `
+<div>
+  <div
+    data-testid="details"
+  >
+    <div
+      class="title"
+    >
+      <div
+        class="backArrow"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="back"
+            src="arrowLeft.svg"
+          />
+        </a>
+      </div>
+      <div
+        class="name"
+      >
+        <h1>
+          Bitcoin
+        </h1>
+        <p>
+          BTC
+        </p>
+      </div>
+    </div>
+    <div
+      class="details"
+    >
+      <p
+        class="card"
+      >
+        <span>
+          Rank:
+        </span>
+        <span>
+          1
+        </span>
+      </p>
+      <p
+        class="card"
+      >
+        <span>
+          Supply:
+        </span>
+        <span>
+          21000000
+        </span>
+      </p>
+      <p
+        class="card"
+      >
+        <span>
+          Max Supply:
+        </span>
+        <span>
+          21000000
+        </span>
+      </p>
+      <p
+        class="card"
+      >
+        <span>
+          Market Cap:
+        </span>
+        <span>
+          $
+          123456789.00
+        </span>
+      </p>
+      <p
+        class="card"
+      >
+        <span>
+          Volume 24h:
+        </span>
+        <span>
+          987654321.00
+        </span>
+      </p>
+      <p
+        class="card"
+      >
+        <span>
+          Price:
+        </span>
+        <span>
+          $
+          40000.000000
+        </span>
+      </p>
+      <p
+        class="card"
+      >
+        <span>
+          Change Percentage:
+        </span>
+        <span>
+          1.50
+          %
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

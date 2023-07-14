@@ -59,6 +59,7 @@
   padding: 15px;
   background: linear-gradient(to top right, #ff7f50, #ff9d79);
   color: #00008b;
+  border: 1px solid darkblue;
 }
 
 .crypto:nth-of-type(3n - 2) {

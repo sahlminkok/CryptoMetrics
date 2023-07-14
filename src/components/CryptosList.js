@@ -4,12 +4,11 @@ import { useNavigate } from 'react-router-dom';
 import { getCryptos, searchCryptos } from '../redux/cryptos/cryptosSlice';
 import style from '../styles/CryptosList.module.css';
 import arrow from '../assets/arrow.svg';
-// import crypt from '../assets/crypto.svg';
 
 const CryptosList = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { filteredCryptos } = useSelector((store) => store.cryptos);
+  const filteredCryptos = useSelector((store) => store.cryptos.filteredCryptos || []);
   const [searchKeyword, setSearchKeyword] = useState('');
 
   useEffect(() => {
@@ -29,7 +28,7 @@ const CryptosList = () => {
   return (
     <main>
       <div>
-        <form className={style.form} onSubmit={handleSubmit}>
+        <form className={style.form} onSubmit={handleSubmit} data-testid="search-form">
           <input
             type="text"
             placeholder="Search"

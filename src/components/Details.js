@@ -14,7 +14,7 @@ const Details = () => {
   }
 
   return (
-    <div>
+    <div data-testid="details">
       <div className={style.title}>
         <div className={style.backArrow}>
           <Link to="/">

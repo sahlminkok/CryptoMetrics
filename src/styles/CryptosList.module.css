@@ -93,10 +93,11 @@
 
   .crypto {
     padding: 20px;
+    border: 1px solid darkblue;
   }
 
   .arrow img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 }

@@ -3,7 +3,7 @@ import CryptosList from './components/CryptosList';
 import Navbar from './components/Navbar';
 import Details from './components/Details';
 
-function App() {
+const App = () => {
   return (
     <>
       <Navbar />
@@ -13,6 +13,6 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 
 export default App;
